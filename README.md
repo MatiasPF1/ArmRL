@@ -15,7 +15,8 @@ reaching, pushing, and pick-and-place.
 
 ## Setup
 
-**Requirements:** Python 3.11.9
+**Requirements:** Python 3.11.9 · CUDA 12.4 (for GPU support)
+
 ```bash
 # Clone the repo
 git clone https://github.com/MatiasPF1/ArmRL.git
@@ -28,7 +29,10 @@ venv\Scripts\activate
 # macOS/Linux
 source venv/bin/activate
 
-# Install dependencies
+# Install PyTorch with CUDA 12.4 support
+pip install torch --index-url https://download.pytorch.org/whl/cu124
+
+# Install remaining dependencies
 pip install -r requirements.txt
 ```
 
